@@ -2,3 +2,18 @@
   margin: 0;
   padding: 0;
 }
+
+/* Start Home paje */
+.home-page {
+  background-image: url(../img/home_bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+/* End Home paje */
