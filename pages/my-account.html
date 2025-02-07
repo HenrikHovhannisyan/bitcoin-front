@@ -50,5 +50,63 @@
         </div>
       </div>
     </nav>
+
+    <div class="page my-account-page">
+      <div class="container mt-5 pt-5">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="card shadow-sm mb-4">
+              <div class="card-body text-center">
+                <h2 class="card-title">My Deposit Address</h2>
+                <p class="bg-light p-3 rounded border">
+                  1caP8vSML2MvOgYZgn30AfsV1LQxq6ZXQe
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="card shadow-sm mb-4">
+              <div class="card-body text-center">
+                <h2 class="card-title">Withdraw Balance</h2>
+                <input
+                  type="number"
+                  class="form-control mb-3"
+                  placeholder="Enter withdrawal amount"
+                  min="0"
+                  step="0.00000001"
+                  required
+                />
+                <button class="btn btn-warning w-100">Withdraw Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h2 class="card-title text-center">My Balance</h2>
+                <table class="table table-bordered mt-3">
+                  <thead>
+                    <tr>
+                      <th>Crypto</th>
+                      <th>Amount</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>BTC</td>
+                      <td>0.0000098</td>
+                    </tr>
+                    <tr>
+                      <td>USD</td>
+                      <td>$5</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
