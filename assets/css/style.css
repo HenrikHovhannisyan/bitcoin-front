@@ -3,9 +3,9 @@
   padding: 0;
 }
 
-/* Start home paje */
-.home-page {
-  background-image: url(../img/home_bg.png);
+/* Start index paje */
+.index-page {
+  background-image: url(../img/index_bg.png);
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -97,3 +97,14 @@
 }
 
 /* End signin signup page */
+
+/* Start Home page */
+.home-page {
+  background-image: url(../img/home_bg.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+/* End Home page */
