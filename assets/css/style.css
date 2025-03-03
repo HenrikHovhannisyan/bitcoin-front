@@ -47,14 +47,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .toggle-box {
   background-color: rgba(255, 255, 255, 0.35);
   padding: 40px;
   border-radius: 10px;
-  width: 350px;
+  width: 100%;
+  max-width: 500px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 20%;
+  top: 40%;
 }
 
 .toggle-buttons {
@@ -148,6 +153,10 @@
 @media screen and (max-width: 768px) {
   .index-page > .btn {
     left: unset;
+  }
+  .toggle-box {
+    left: 0;
+    max-width: unset;
   }
 }
 
