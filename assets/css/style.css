@@ -142,6 +142,37 @@
 .my-account-page {
   background-image: url(../img/my-account_bg.png);
 }
+
+.toggle-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+  background: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700; /* Poppins Bold */
+  color: black;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-buttons button.active {
+  border-bottom: 2px solid #ffd800; /* Yellow underline for active tab */
+}
+
+.toggle-buttons button:hover {
+  background-color: rgba(255, 216, 0, 0.1); /* Light yellow hover */
+}
+
+.hidden {
+  display: none;
+}
 /* End My Account page */
 
 /*=============== BREAKPOINTS ===============*/

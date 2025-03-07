@@ -71,9 +71,17 @@
               <div class="card-body text-center">
                 <h2 class="card-title">Withdraw Balance</h2>
                 <input
-                  type="number"
+                  type="text"
                   class="form-control mb-3"
-                  placeholder="Enter withdrawal amount"
+                  placeholder="Enter Withdrawal Amount (BTC)"
+                  min="0"
+                  step="0.00000001"
+                  required
+                />
+                <input
+                  type="text"
+                  class="form-control mb-3"
+                  placeholder="Withdrawal Wallet Addres"
                   min="0"
                   step="0.00000001"
                   required
@@ -84,28 +92,82 @@
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-6 m-auto">
-            <div class="card shadow-sm">
-              <div class="card-body">
-                <h2 class="card-title text-center">My Balance</h2>
-                <table class="table table-bordered mt-3">
-                  <thead>
-                    <tr>
-                      <th>Crypto</th>
-                      <th>Amount</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>BTC</td>
-                      <td>0.0000098</td>
-                    </tr>
-                    <tr>
-                      <td>USD</td>
-                      <td>$5</td>
-                    </tr>
-                  </tbody>
-                </table>
+          <div class="col-lg-6 mx-auto">
+            <div class="card shadow-sm p-3">
+              <ul class="nav nav-tabs" id="accountTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="balance-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#my-balance"
+                    type="button"
+                    role="tab"
+                  >
+                    My Balance
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link"
+                    id="tickets-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#my-tickets"
+                    type="button"
+                    role="tab"
+                  >
+                    My Ticket Purchases
+                  </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="accountTabsContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="my-balance"
+                  role="tabpanel"
+                >
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Crypto</th>
+                        <th>Amount</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>BTC</td>
+                        <td>0.0000098</td>
+                      </tr>
+                      <tr>
+                        <td>USD</td>
+                        <td>$5</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane fade" id="my-tickets" role="tabpanel">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Ticket Number</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>2025-01-21</td>
+                        <td>14:45:22</td>
+                        <td>#87364</td>
+                      </tr>
+                      <tr>
+                        <td>2025-01-21</td>
+                        <td>14:46:30</td>
+                        <td>#57382</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
             </div>
           </div>
