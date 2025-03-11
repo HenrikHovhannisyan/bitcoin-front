@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bitcoin - Home</title>
+    <title>MoonDrow - Home</title>
 
     <!-- CSS -->
     <link
@@ -26,7 +26,7 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="/">Bitcoin</a>
+        <a class="navbar-brand fw-bold" href="/">MoonDrow</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -54,163 +54,281 @@
     <div class="page home-page">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-2 mt-3">
-            <div class="card p-3 shadow-sm">
-              <h2 class="h5">Purchase Tickets</h2>
-              <p>1 Ticket = $2</p>
-              <form>
-                <div class="mb-3">
-                  <label for="ticketCount" class="form-label"
-                    >Pick a number (1-100,000)</label
-                  >
-                  <input
-                    type="number"
-                    id="ticketCount"
-                    class="form-control"
-                    min="1"
-                    max="100"
-                    required
-                  />
+          <div class="col-lg-4">
+            <div class="col mt-3">
+              <div class="card p-3 shadow-sm">
+                <h2 class="h5">MoonDrow Jackpot</h2>
+                <div class="table-responsive">
+                  <table class="table table-bordered">
+                    <thead class="table-light">
+                      <tr>
+                        <th>Crypto</th>
+                        <th>Amount</th>
+                        <th>USD Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>BTC</td>
+                        <td>2.345</td>
+                        <td>$260,044.33</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
-                <button class="btn btn-warning w-100">Purchase</button>
-              </form>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-5 mt-3">
-            <div class="card p-3 shadow-sm">
-              <h2 class="h5">Bitcoin Jackpot</h2>
-              <div class="table-responsive">
-                <table class="table table-bordered">
-                  <thead class="table-light">
-                    <tr>
-                      <th>Crypto</th>
-                      <th>Amount</th>
-                      <th>USD Value</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>BTC</td>
-                      <td>2.345</td>
-                      <td>$260,044.33</td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="col mt-3">
+              <div class="card p-3 shadow-sm">
+                <h2 class="h5">Purchase Tickets</h2>
+                <p>1 Ticket = $2</p>
+                <form>
+                  <div class="mb-3">
+                    <label for="ticketCount" class="form-label"
+                      >Pick a number from 1-100,000</label
+                    >
+                    <input
+                      type="number"
+                      id="ticketCount"
+                      class="form-control"
+                      min="1"
+                      max="100"
+                      required
+                    />
+                  </div>
+                  <button class="btn btn-warning w-100">Purchase</button>
+                </form>
+              </div>
+            </div>
+            <div class="col mt-3">
+              <div class="card p-3 shadow-sm">
+                <h2 class="h5">SHA512 For This Week</h2>
+                <p>(Reduced By last 8 Characters)</p>
+                <div class="bg-white p-3 rounded text-center">
+                  <p>
+                    sha384QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hWSHAsha384YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-5 mt-3">
-            <div class="card p-3 shadow-sm">
-              <h2 class="h5">Recent Ticket Purchases</h2>
-              <div class="table-responsive">
-                <table class="table table-bordered">
-                  <thead class="table-light">
-                    <tr>
-                      <th>Date</th>
-                      <th>Time</th>
-                      <th>Ticket Number</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>2025-01-21</td>
-                      <td>14:45:22</td>
-                      <td>#87364</td>
-                    </tr>
-                    <tr>
-                      <td>2025-01-21</td>
-                      <td>14:46:30</td>
-                      <td>#57382</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 mt-3">
-            <div class="card p-3 shadow-sm">
-              <h2 class="h5">Last Ten Draws</h2>
-              <div class="table-responsive">
-                <table class="table table-bordered">
-                  <thead class="table-light">
-                    <tr>
-                      <th>Date</th>
-                      <th>Pot</th>
-                      <th>Tickets Sold</th>
-                      <th>Time</th>
-                      <th>Ticket Number</th>
-                      <th>Seed</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>2025-01-19</td>
-                      <td class="text-danger fw-bold">Not won</td>
-                      <td>2608</td>
-                      <td>12/01/2025 - 19/01/2025</td>
-                      <td>#82040</td>
-                      <td class="small">
-                        Seed:
-                        13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2025-01-19</td>
-                      <td class="text-danger fw-bold">Not won</td>
-                      <td>2608</td>
-                      <td>12/01/2025 - 19/01/2025</td>
-                      <td>#82040</td>
-                      <td class="small">
-                        Seed:
-                        13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2025-01-19</td>
-                      <td class="text-success fw-bold">Won</td>
-                      <td>2608</td>
-                      <td>12/01/2025 - 19/01/2025</td>
-                      <td>#82040</td>
-                      <td class="small">
-                        Seed:
-                        13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2025-01-19</td>
-                      <td class="text-danger fw-bold">Not won</td>
-                      <td>2608</td>
-                      <td>12/01/2025 - 19/01/2025</td>
-                      <td>#82040</td>
-                      <td class="small">
-                        Seed:
-                        13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2025-01-19</td>
-                      <td class="text-danger fw-bold">Not won</td>
-                      <td>2608</td>
-                      <td>12/01/2025 - 19/01/2025</td>
-                      <td>#82040</td>
-                      <td class="small">
-                        Seed:
-                        13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>2025-01-19</td>
-                      <td class="text-danger fw-bold">Not won</td>
-                      <td>2608</td>
-                      <td>12/01/2025 - 19/01/2025</td>
-                      <td>#82040</td>
-                      <td class="small">
-                        Seed:
-                        13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+          <div class="col-lg-8">
+            <div class="col mt-3">
+              <div class="card p-3 shadow-sm">
+                <nav>
+                  <div
+                    class="nav nav-tabs justify-content-center"
+                    id="nav-tab"
+                    role="tablist"
+                  >
+                    <button
+                      class="nav-link active"
+                      id="nav-home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-home"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-home"
+                      aria-selected="true"
+                    >
+                      <h2 class="h5 text-warning">Last Ten Draws</h2>
+                    </button>
+                    <button
+                      class="nav-link"
+                      id="nav-profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#nav-profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="nav-profile"
+                      aria-selected="false"
+                    >
+                      <h2 class="h5 text-warning">Recent Ticet Purchases</h2>
+                    </button>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="nav-home"
+                    role="tabpanel"
+                    aria-labelledby="nav-home-tab"
+                    tabindex="0"
+                  >
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead class="table-light">
+                          <tr>
+                            <th>Date</th>
+                            <th>Pot</th>
+                            <th>Tickets Sold</th>
+                            <th>Time</th>
+                            <th>Ticket Number</th>
+                            <th>Seed</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2025-01-19</td>
+                            <td class="text-danger fw-bold">Not won</td>
+                            <td>2608</td>
+                            <td>12/01/2025 - 19/01/2025</td>
+                            <td>#82040</td>
+                            <td class="small">
+                              Seed:
+                              13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2025-01-19</td>
+                            <td class="text-danger fw-bold">Not won</td>
+                            <td>2608</td>
+                            <td>12/01/2025 - 19/01/2025</td>
+                            <td>#82040</td>
+                            <td class="small">
+                              Seed:
+                              13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2025-01-19</td>
+                            <td class="text-success fw-bold">Won</td>
+                            <td>2608</td>
+                            <td>12/01/2025 - 19/01/2025</td>
+                            <td>#82040</td>
+                            <td class="small">
+                              Seed:
+                              13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2025-01-19</td>
+                            <td class="text-danger fw-bold">Not won</td>
+                            <td>2608</td>
+                            <td>12/01/2025 - 19/01/2025</td>
+                            <td>#82040</td>
+                            <td class="small">
+                              Seed:
+                              13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2025-01-19</td>
+                            <td class="text-danger fw-bold">Not won</td>
+                            <td>2608</td>
+                            <td>12/01/2025 - 19/01/2025</td>
+                            <td>#82040</td>
+                            <td class="small">
+                              Seed:
+                              13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2025-01-19</td>
+                            <td class="text-danger fw-bold">Not won</td>
+                            <td>2608</td>
+                            <td>12/01/2025 - 19/01/2025</td>
+                            <td>#82040</td>
+                            <td class="small">
+                              Seed:
+                              13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="nav-profile"
+                    role="tabpanel"
+                    aria-labelledby="nav-profile-tab"
+                    tabindex="0"
+                  >
+                    <div class="table-responsive">
+                      <table class="table table-bordered">
+                        <thead class="table-light">
+                          <tr>
+                            <th>Date</th>
+                            <th>Pot</th>
+                            <th>Tickets Sold</th>
+                            <th>Time</th>
+                            <th>Ticket Number</th>
+                            <th>Seed</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>2025-01-19</td>
+                            <td class="text-danger fw-bold">Not won</td>
+                            <td>2608</td>
+                            <td>12/01/2025 - 19/01/2025</td>
+                            <td>#82040</td>
+                            <td class="small">
+                              Seed:
+                              13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2025-01-19</td>
+                            <td class="text-danger fw-bold">Not won</td>
+                            <td>2608</td>
+                            <td>12/01/2025 - 19/01/2025</td>
+                            <td>#82040</td>
+                            <td class="small">
+                              Seed:
+                              13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2025-01-19</td>
+                            <td class="text-success fw-bold">Won</td>
+                            <td>2608</td>
+                            <td>12/01/2025 - 19/01/2025</td>
+                            <td>#82040</td>
+                            <td class="small">
+                              Seed:
+                              13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2025-01-19</td>
+                            <td class="text-danger fw-bold">Not won</td>
+                            <td>2608</td>
+                            <td>12/01/2025 - 19/01/2025</td>
+                            <td>#82040</td>
+                            <td class="small">
+                              Seed:
+                              13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2025-01-19</td>
+                            <td class="text-danger fw-bold">Not won</td>
+                            <td>2608</td>
+                            <td>12/01/2025 - 19/01/2025</td>
+                            <td>#82040</td>
+                            <td class="small">
+                              Seed:
+                              13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>2025-01-19</td>
+                            <td class="text-danger fw-bold">Not won</td>
+                            <td>2608</td>
+                            <td>12/01/2025 - 19/01/2025</td>
+                            <td>#82040</td>
+                            <td class="small">
+                              Seed:
+                              13217743-ec234fe6546456gvgve645v5765bgfbju76876re-E9uds76fsv-Number:82040
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
