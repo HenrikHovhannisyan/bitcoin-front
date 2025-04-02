@@ -32,7 +32,6 @@
 .index-page > .btn {
   position: absolute;
   top: 50%;
-  left: 25%;
   font-size: 28px;
 }
 
@@ -58,8 +57,7 @@
   max-width: 500px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   position: absolute;
-  left: 20%;
-  top: 40%;
+  top: 50%;
 }
 
 .toggle-buttons {
@@ -182,11 +180,7 @@
 
 /* md - For medium devices */
 @media screen and (max-width: 768px) {
-  .index-page > .btn {
-    left: unset;
-  }
   .toggle-box {
-    left: 0;
     max-width: unset;
   }
 }
