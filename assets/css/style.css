@@ -98,6 +98,23 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: "Poppins", sans-serif;
+}
+
+.form-container input.is-invalid {
+  border-color: #dc3545;
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+.form-container input.is-valid {
+  border-color: #28a745;
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.85rem;
+  margin-top: -10px;
+  margin-bottom: 5px;
   font-size: 1rem;
 }
 
